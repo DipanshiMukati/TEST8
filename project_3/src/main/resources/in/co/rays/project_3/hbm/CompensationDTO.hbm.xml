@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 9, 2025, 3:22:27 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping  package="in.co.rays.project_3.dto">
+    <class name="CompensationDTO" table="COMPENSATIONDTO">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        
+         <property name="staffMember" type="java.lang.String">
+            <column name="STAFFMEMBER" />
+        </property>
+        <property name="paymentAmount" type="int">
+            <column name="PAYMENTAMOUNT" />
+        </property>
+        <property name="dateApplied" type="java.util.Date">
+            <column name="DATEAPPLIED" />
+        </property>
+        <property name="state" type="java.lang.String">
+            <column name="STATE" />
+        </property>
+    </class>
+</hibernate-mapping>
